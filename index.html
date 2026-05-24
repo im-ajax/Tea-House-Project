@@ -139,13 +139,13 @@
         </div>
     </section>
     <!-- News and event section -->
-    <section class="container mx-auto my-[90px]">
+    <section class="container mx-auto my-[90px] sm:text-center">
         <div class="text-center max-w-[65%] mx-auto">
             <h1 class="text-[45px] font-bold">News & Events</h1>
             <p class="text-[#777777]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
         </div>
         <!-- cards -->
-        <div class="cards-section my-[50px] flex justify-evenly">
+        <div class="cards-section my-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:justify-evenly gap-6">
             <div class="border border-[#777777] w-[364px] h-[448px] p-[22px] rounded-xl space-y-3">
                 <img src="./images/news-1.png" alt="">
                 <p class="text-[#777777]">Feb 05,2026</p>
@@ -169,8 +169,106 @@
             </div>
         </div>
     </section>
-    <footer class="h-[746px] bg-amber-100 pt-[130px]">
-        <!-- footer Top -->
+     <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+      <div class="w-9/12 mx-auto">
+        <!-- Logo -->
+        <div class="mb-8 flex justify-between">
+          <img class="mb-8" src="./images/cup.png" alt="" />
+          <div class="flex items-center gap-2">
+            <h4>Ready to get started?</h4>
+            <button
+              class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- Links -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- first column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="hover:text-orange-600" href="#">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Insurance</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- second column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Our Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="hover:text-orange-600" href="#">Insurance</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- third column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Help</h3>
+            <ul class="space-y-2">
+              <li>
+                <a class="hover:text-orange-600" href="#">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-orange-600" href="#">Insurance</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- fourth column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">
+              Subscribe to our newsletter
+            </h3>
+            <div class="flex flex-col space-y-2">
+              <div>
+                <input
+                  placeholder="Email Address"
+                  type="text"
+                  class="bg-transparent border-b-2 border-black w-4/6"
+                />
+                <i
+                  class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"
+                ></i>
+                <div class="flex justify-between w-2/5 mb-2 mt-8">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                  <i class="fa-brands fa-square-twitter"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-4 mt-4">
+          <p class="text-sm text-gray-600">
+            © 2027 UIDesign.to - All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- <footer class="h-[746px] bg-amber-100 pt-[130px]">
+        
         <section class="container max-w-[1140px] mx-auto h[486px]">
             <div class=" flex justify-between mb-28">
                 <img src="./images/cup.png" alt="">
@@ -180,7 +278,7 @@
                     </button>
                 </div>
             </div>
-            <div class=" h-[322px] flex justify-between">
+            <div class=" h-[322px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[25px]">
                 <div class="space-y-5">
                     <h2 class="text-xl font-bold">Quick Links</h2>
                     <p class="text-[#777777] font-semibold">Home</p>
@@ -199,9 +297,8 @@
                     <h2 class="text-xl font-bold">Help</h2>
                     <p class="text-[#777777] font-semibold">FAQs</p>
                     <p class="text-[#777777] font-semibold">Contact Us</p>
-                    
                 </div>
-                <div class="space-y-5">
+                <div class="space-y-5 text-center md:text-left">
                     <h2 class="text-3xl font-bold mb-9">Subscribe To Our <br>Newsletter</h2>
                     <input type="text" placeholder="Email Adress" class="border-b-2 pb-2 outline-none">
                     <button class="h-8 w-8 rounded-full text-white font-semibold bg-linear-to-r from-[#ff8938] to-[#ff0000]"><i class="fa-solid fa-arrow-right"></i>
@@ -215,6 +312,6 @@
             </div>
             <p class="text-center text-[#777777]">© 2027 UIDesign.to - All rights reserved.</p>
         </section>
-    </footer>
+    </footer> -->
 </body>
 </html>
